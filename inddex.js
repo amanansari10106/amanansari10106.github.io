@@ -244,6 +244,7 @@ function dectobase(n, base) {
 
     function hexdeconv(base, arr) {
         let t;
+        arr = arr.toUpperCase();
         let temp = 0;
         let c;
         for(let i=arr.length; i>0; i--){
