@@ -17,11 +17,12 @@
 <body>
     
     <h1>
-        the pos order is
+        Convert Here
     </h1>
     <form id="formid">
+
     <select id="one" onchange="getddl()">
-        <option value="1">Select</option>
+        <option value="1">Select the input number system</option>
         <option value="2">Binary</option>
         <option value="8">octal</option>
         <option value="10">Decimal</option>
@@ -29,9 +30,9 @@
 
 
       </select>
-    <!-- <input type="number">number</input> -->
+  
     <label id="label">
-        <!-- <b>select the input base</b> -->
+        
         <input type="number" placeholder="enter the number" id="inp" disabled> </input>
     </label>
     
@@ -50,7 +51,7 @@
        
         if(formid.one[formid.one.selectedIndex].value == 16){
             
-        document.getElementById('label').innerHTML = ('<input type="text" placeholder="enter the alpha-numeric" id="inp"> hello</input>')
+        document.getElementById('label').innerHTML = ('<input type="text" placeholder="enter the alpha-numeric" id="inp"></input>')
         }
         else{
             
