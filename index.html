@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 59px;
+    height: 22px;
+    margin: 9px;
+    margin-left: 14px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>
+        the pos order is
+    </h1>
+    <form id="formid">
+    <select id="one" onchange="getddl()">
+        <option value="1">Select</option>
+        <option value="2">Binary</option>
+        <option value="8">octal</option>
+        <option value="10">Decimal</option>
+        <option value="16">Hexadecimal</option>
+
+
+      </select>
+    <!-- <input type="number">number</input> -->
+    <label id="label">
+        <!-- <b>select the input base</b> -->
+        <input type="number" placeholder="enter the number" id="inp" disabled> </input>
+    </label>
+    
+</form>
+<button onclick="clck()" id="btn">Convert</button>
+    <div id="divone"></div>
+    <div id="divtwo"></div>
+    <div id="divthree"></div>
+    <div id="divfour"></div>
+<script src="inddex.js">
+    
+</script>
+<script>
+
+    function getddl(){
+        if(formid.one[formid.one.selectedIndex].value == 16){
+            document.getElementsById("btn").disabled = true;
+        document.getElementById('label').innerHTML = ('<input type="text" placeholder="enter the alpha-numeric" id="inp"> </input>')
+        }
+        else{document.getElementsByTagName("button").disabled = false;
+            document.getElementById('label').innerHTML = ('<input type="number" placeholder="enter the number" id="inp"> </input>')
+        }
+    }
+   
+</script>
+</body>
+
+</html>
