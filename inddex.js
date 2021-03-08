@@ -283,19 +283,20 @@ function clck(){
     console.log(typeof(input));
     console.log(input);
     console.log(base);
+    
     if(document.getElementById("inp").value == ""){
-        document.getElementById("divone").innerHTML = ('<h3>tobinary</h3>' + "Input some value")
+        document.getElementById("divone").innerHTML = (`<h3>${formid.one[formid.one.selectedIndex].text} To Binary</h3>` + "Input some value")
     console.log(converter(input , base, 8));
-    document.getElementById("divtwo").innerHTML = ('<h3>tooctal</h3>' + "Input some value")
-    document.getElementById("divthree").innerHTML = ('<h3>todecimal</h3>' + "Input some value")
-    document.getElementById("divfour").innerHTML = ('<h3>tohexadecimal</h3>' + "Input some value")
+    document.getElementById("divtwo").innerHTML = (`<h3>${formid.one[formid.one.selectedIndex].text} To Octal</h3>` + "Input some value")
+    document.getElementById("divthree").innerHTML = (`<h3>${formid.one[formid.one.selectedIndex].text} To Decimal</h3>` + "Input some value")
+    document.getElementById("divfour").innerHTML = (`<h3>${formid.one[formid.one.selectedIndex].text} To Hexadecimal</h3>` + "Input some value")
     }
     else{
-        document.getElementById("divone").innerHTML = ('<h3>tobinary</h3>' + converter(input , base, 2))
+        document.getElementById("divone").innerHTML = (`<h3>${formid.one[formid.one.selectedIndex].text} To Binary</h3>` + converter(input , base, 2))
     console.log(converter(input , base, 8));
-    document.getElementById("divtwo").innerHTML = ('<h3>tooctal</h3>' + converter(input , base, 8))
-    document.getElementById("divthree").innerHTML = ('<h3>todecimal</h3>' + converter(input , base, 10))
-    document.getElementById("divfour").innerHTML = ('<h3>tohexadecimal</h3>' + converter(input , base, 16))
+    document.getElementById("divtwo").innerHTML = (`<h3>${formid.one[formid.one.selectedIndex].text} To Octal</h3>` + converter(input , base, 8))
+    document.getElementById("divthree").innerHTML = (`<h3>${formid.one[formid.one.selectedIndex].text} To Decimal</h3>` + converter(input , base, 10))
+    document.getElementById("divfour").innerHTML = (`<h3>${formid.one[formid.one.selectedIndex].text} To Hexadecimal</h3>` + converter(input , base, 16))
     }
  
 
